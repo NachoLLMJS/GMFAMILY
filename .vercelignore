@@ -1,0 +1,13 @@
+.git/
+.github/
+.vercel/
+node_modules/
+artifacts/
+cache/
+contract-test/
+contracts/
+references/
+coverage/
+.env
+.env.*
+*.log

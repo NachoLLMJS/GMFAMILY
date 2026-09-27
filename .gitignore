@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.vercel/
+artifacts/
+cache/
+coverage/
+references/
+*.tsbuildinfo
+*.log
+*.tmp

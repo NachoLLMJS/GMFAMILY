@@ -1,0 +1,39 @@
+{
+  "name": "gmfamily",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c yellow,cyan \"node server.mjs\" \"vite\"",
+    "build": "tsc -b && vite build",
+    "start": "NODE_ENV=production node server.mjs",
+    "check": "tsc -b --pretty false",
+    "test": "vitest run",
+    "test:contracts": "hardhat test nodejs",
+    "compile:contracts": "hardhat compile --build-profile production",
+    "deploy:testnet": "node scripts/deploy-testnet.mjs",
+    "update:data": "node scripts/update-data.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "latest",
+    "express": "latest",
+    "gmgn-cli": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "viem": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-node-test-runner": "^3.1.0",
+    "@nomicfoundation/hardhat-viem": "^3.0.9",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "hardhat": "^3.18.0",
+    "typescript": "latest",
+    "vitest": "^5.0.2"
+  }
+}
