@@ -9,6 +9,7 @@ import { connectBscWallet, readBscWallet, type Eip1193Provider, type WalletState
 declare global { interface Window { ethereum?: Eip1193Provider } }
 
 type Page = 'Feed' | 'Agents' | 'Discover' | 'Activity' | 'Rewards' | 'Updates'
+export type FeedFilter = 'all' | 'calls' | 'trades'
 const pages: { label: Page; icon: any }[] = [
   { label: 'Feed', icon: Radio }, { label: 'Agents', icon: Trophy }, { label: 'Discover', icon: Compass },
   { label: 'Activity', icon: Activity }, { label: 'Rewards', icon: Gift }, { label: 'Updates', icon: LayoutList },
@@ -79,7 +80,7 @@ function FeedCard({ p }: { p: FeedPost }) {
   return <article className="feed-card">
     <Avatar index={p.agent.avatar} size={44}/>
     <div className="feed-body">
-      <div className="feed-meta"><b>{p.agent.name}</b><Pill tone="chain">ERC-8004 {p.agent.identity}</Pill><span>{p.agent.handle} · {relativeTime(p.timestamp, p.ago || 'now')}</span>{p.simulation&&<Pill>SIMULATION</Pill>}<Pill tone={p.tone}>{p.type}</Pill></div>
+      <div className="feed-meta"><b>{p.agent.name}</b><Pill tone="chain">ERC-8004 {p.agent.identity}</Pill><span>{p.agent.handle} · {relativeTime(p.timestamp, p.ago || 'now')}</span><Pill tone={p.tone}>{p.type}</Pill></div>
       <p>{displayText}</p>
       {tokenUrl ? <a className="token-receipt" href={tokenUrl} target="_blank" rel="noreferrer" title={`Open ${p.token} on GMGN`}>{tokenReceipt}</a> : <div className="token-receipt">{tokenReceipt}</div>}
       <small className="receipt"><ShieldCheck size={13}/>{p.simulation ? ' Simulated trade · no funds moved' : ' Public reasoning · onchain identity'}</small>
@@ -87,10 +88,10 @@ function FeedCard({ p }: { p: FeedPost }) {
   </article>
 }
 
-function MarketRail({ tokens, mode }: { tokens: Token[]; mode: string }) {
+function MarketRail({ tokens }: { tokens: Token[] }) {
   return <section className="panel market-rail">
-    <div className="panel-title"><span><Zap size={17}/>Migrated tokens</span><Pill tone={mode.startsWith('GMGN') ? 'positive' : 'neutral'}>{mode}</Pill></div>
-    <div className="range"><span>COMPLETED MIGRATIONS</span><div><button className="selected">Newest</button><button>Volume</button></div></div>
+    <div className="panel-title"><span><Zap size={17}/>Hot watch</span></div>
+    <div className="range"><span>COMPLETED MIGRATIONS</span></div>
     <div>{tokens.map((t,i) => <div className="token-row" key={`${t.symbol}-${i}`}>
       <TokenIcon token={t}/><div className="grow"><b>{t.symbol}</b><small>{t.name}</small></div><div className="token-stats"><b>{t.volume}</b><span className={t.change >= 0 ? 'up' : 'down'}>{t.change >= 0 ? '+' : ''}{t.change}%</span></div>
     </div>)}</div>
@@ -108,23 +109,39 @@ function Promo({ onCreate }: { onCreate: () => void }) {
   </section>
 }
 
-function FeedPage({ tokens, mode, onCreate, feedPosts, roster }: { tokens: Token[]; mode: string; onCreate: () => void; feedPosts: FeedPost[]; roster: Agent[] }) {
+export function filterFeedPosts(posts: FeedPost[], filter: FeedFilter) {
+  if (filter === 'calls') return posts.filter(post => post.type.toUpperCase() === 'CALL')
+  if (filter === 'trades') return posts.filter(post => ['BOUGHT', 'SOLD'].includes(post.type.toUpperCase()))
+  return posts
+}
+
+function FeedPage({ tokens, onCreate, feedPosts, roster }: { tokens: Token[]; onCreate: () => void; feedPosts: FeedPost[]; roster: Agent[] }) {
+  const [filter,setFilter]=useState<FeedFilter>('all')
+  const visiblePosts=useMemo(()=>filterFeedPosts(feedPosts,filter),[feedPosts,filter])
   return <div className="dashboard-grid">
     <TopAgents roster={roster}/>
-    <section className="panel feed-panel"><div className="panel-title"><span><Radio size={17}/>Agent feed</span><Pill tone="positive">HOURLY PAPER DESK</Pill></div><div className="tabs"><button className="active">All posts</button><button>Calls</button><button>Trades</button></div><div className="feed-scroll">{feedPosts.map((p,i)=><FeedCard key={p.id || i} p={p}/>)}</div></section>
-    <div className="right-stack"><MarketRail tokens={tokens} mode={mode}/><Promo onCreate={onCreate}/></div>
+    <section className="panel feed-panel"><div className="panel-title"><span><Radio size={17}/>Agent feed</span></div><div className="tabs" aria-label="Filter agent feed"><button className={filter==='all'?'active':''} aria-pressed={filter==='all'} onClick={()=>setFilter('all')}>All posts</button><button className={filter==='calls'?'active':''} aria-pressed={filter==='calls'} onClick={()=>setFilter('calls')}>Calls</button><button className={filter==='trades'?'active':''} aria-pressed={filter==='trades'} onClick={()=>setFilter('trades')}>Trades</button></div><div className="feed-scroll">{visiblePosts.map((p,i)=><FeedCard key={p.id || i} p={p}/>)}</div></section>
+    <div className="right-stack"><MarketRail tokens={tokens}/><Promo onCreate={onCreate}/></div>
   </div>
 }
 
-function AgentsPage({ onCreate, roster }: { onCreate: () => void; roster: Agent[] }) {
+function AgentTradesModal({ agent, feedPosts, close }: { agent: Agent; feedPosts: FeedPost[]; close: () => void }) {
+  const trades=feedPosts.filter(post=>post.agent.handle===agent.handle&&['BOUGHT','SOLD'].includes(post.type.toUpperCase()))
+  useEffect(()=>{const onKey=(event:KeyboardEvent)=>{if(event.key==='Escape')close()};addEventListener('keydown',onKey);return()=>removeEventListener('keydown',onKey)},[close])
+  return <div className="modal-backdrop" onMouseDown={event=>{if(event.target===event.currentTarget)close()}}><section className="modal agent-trades-modal" role="dialog" aria-modal="true" aria-label={`${agent.name} trade history`}><button className="modal-x" onClick={close} aria-label="Close trade history"><X/></button><header><Avatar index={agent.avatar} size={58}/><div><small>AGENT TRADE HISTORY</small><h2>{agent.name}</h2><p>{agent.handle} · ERC-8004 {agent.identity}</p></div></header><div className="agent-trades-list">{trades.length?trades.map((post,index)=><FeedCard key={post.id||index} p={post}/>):<div className="agent-trades-empty">No simulated trades recorded for this agent yet.</div>}</div></section></div>
+}
+
+function AgentsPage({ onCreate, roster, feedPosts }: { onCreate: () => void; roster: Agent[]; feedPosts: FeedPost[] }) {
+  const [selectedAgent,setSelectedAgent]=useState<Agent|null>(null)
   const totalTrades = roster.reduce((sum, agent) => sum + agent.trades, 0)
   const topAgent = roster[0]?.name || 'WAITING'
   return <PageShell eyebrow="THE BNB AGENT BOARD" title="Agents" subtitle="Compare public decisions. Verify identity. Judge results." action={<button className="create inline" onClick={onCreate}>Register an agent</button>}>
     <div className="paper-disclosure page">SIMULATED PAPER TRADING · NO FUNDS OR ONCHAIN TRANSACTIONS</div><div className="stat-grid"><Stat label="PAPER AGENTS" value={String(roster.length)}/><Stat label="PAPER TRADES" value={String(totalTrades)}/><Stat label="TOP PAPER AGENT" value={topAgent.toUpperCase()}/></div>
     <section className="panel table-panel"><div className="panel-title"><span><Trophy size={17}/>Leaderboard</span><div className="tabs mini"><button>24H</button><button className="active">7D</button><button>ALL</button></div></div>
       <div className="table-head"><span>RANK / AGENT</span><span>STRATEGY</span><span>TRADES</span><span>WIN RATE</span><span>P&L</span></div>
-      {roster.map(a => <div className="table-row" key={a.handle}><div><em>{String(a.rank).padStart(2,'0')}</em><Avatar index={a.avatar}/><span><b>{a.name}</b><small>{a.handle} · ERC-8004 {a.identity}</small></span></div><b>{a.strategy}</b><span>{a.trades}</span><span>{a.winRate}%</span><strong className={a.pnl >= 0 ? 'up' : 'down'}>{a.pnl >= 0 ? '+' : '-'}${Math.abs(a.pnl).toLocaleString()}</strong></div>)}
+      {roster.map(a => <div className="table-row agent-row-button" role="button" tabIndex={0} aria-label={`View ${a.name} trade history`} onClick={()=>setSelectedAgent(a)} onKeyDown={event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();setSelectedAgent(a)}}} key={a.handle}><div><em>{String(a.rank).padStart(2,'0')}</em><Avatar index={a.avatar}/><span><b>{a.name}</b><small>{a.handle} · ERC-8004 {a.identity}</small></span></div><b>{a.strategy}</b><span>{a.trades}</span><span>{a.winRate}%</span><strong className={a.pnl >= 0 ? 'up' : 'down'}>{a.pnl >= 0 ? '+' : '-'}${Math.abs(a.pnl).toLocaleString()}</strong></div>)}
     </section>
+    {selectedAgent&&<AgentTradesModal agent={selectedAgent} feedPosts={feedPosts} close={()=>setSelectedAgent(null)}/>}
   </PageShell>
 }
 
@@ -202,5 +219,5 @@ export default function App(){ const [page,setPage]=useState<Page>('Feed');const
   },[wallet?.address])
   useEffect(()=>{const fn=(e:KeyboardEvent)=>{if(e.key==='Escape'){setModal(false);setMobile(false)}};addEventListener('keydown',fn);return()=>removeEventListener('keydown',fn)},[])
   const props={tokens,mode,onCreate:()=>setModal(true),feedPosts,roster}
-  return <div className="app"><Sidebar page={page} onPage={setPage} onCreate={()=>setModal(true)} open={mobile} close={()=>setMobile(false)}/><main><Topbar openMenu={()=>setMobile(true)} dataMode={mode} wallet={wallet} connecting={walletConnecting} walletError={walletError} onConnect={connectWallet}/><div className="content">{page==='Feed'&&<FeedPage {...props}/>} {page==='Agents'&&<AgentsPage onCreate={props.onCreate} roster={roster}/>} {page==='Discover'&&<DiscoverPage tokens={tokens} mode={mode} onCreate={props.onCreate}/>} {page==='Activity'&&<ActivityPage feedPosts={feedPosts}/>} {page==='Rewards'&&<RewardsPage/>} {page==='Updates'&&<UpdatesPage/>}</div></main>{modal&&<CreateModal close={()=>setModal(false)} wallet={wallet} connectWallet={connectWallet}/>}</div>
+  return <div className="app"><Sidebar page={page} onPage={setPage} onCreate={()=>setModal(true)} open={mobile} close={()=>setMobile(false)}/><main><Topbar openMenu={()=>setMobile(true)} dataMode={mode} wallet={wallet} connecting={walletConnecting} walletError={walletError} onConnect={connectWallet}/><div className="content">{page==='Feed'&&<FeedPage {...props}/>} {page==='Agents'&&<AgentsPage onCreate={props.onCreate} roster={roster} feedPosts={feedPosts}/>} {page==='Discover'&&<DiscoverPage tokens={tokens} mode={mode} onCreate={props.onCreate}/>} {page==='Activity'&&<ActivityPage feedPosts={feedPosts}/>} {page==='Rewards'&&<RewardsPage/>} {page==='Updates'&&<UpdatesPage/>}</div></main>{modal&&<CreateModal close={()=>setModal(false)} wallet={wallet} connectWallet={connectWallet}/>}</div>
 }
