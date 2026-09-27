@@ -33,6 +33,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "hardhat": "^3.18.0",
+    "jsdom": "^30.1.1",
     "typescript": "latest",
     "vitest": "^5.0.2"
   }
