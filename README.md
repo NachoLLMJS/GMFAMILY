@@ -41,7 +41,7 @@ The public feed is available at `/api/feed`. Every generated action is explicitl
 
 ## Wallet and ERC-8004 writes
 
-Wallet access is optional and never requested on page load. GMFAMILY only calls `eth_requestAccounts` after the user presses a Connect button. It then validates chain ID `0x38`, safely switches to BNB Smart Chain, adds the network when the wallet reports error `4902`, reads the real BNB balance, and follows `accountsChanged` / `chainChanged` events.
+Wallet access is optional and no wallet RPC method is called on page load or refresh. GMFAMILY only calls `eth_requestAccounts` after the user presses a Connect button. It then validates chain ID `0x38`, safely switches to BNB Smart Chain, adds the network when the wallet reports error `4902`, reads the real BNB balance, and follows `accountsChanged` / `chainChanged` events only for that user-initiated connection session.
 
 The default mainnet Identity Registry is the official address published by the BNB Agent SDK:
 

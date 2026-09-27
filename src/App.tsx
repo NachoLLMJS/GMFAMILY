@@ -193,13 +193,13 @@ export default function App(){ const [page,setPage]=useState<Page>('Feed');const
   useEffect(()=>{fetch('/api/migrations').then(async r=>{if(!r.ok)throw new Error();return r.json()}).then(d=>{if(Array.isArray(d.tokens)&&d.tokens.length){setTokens(d.tokens);setMode(`GMGN MIGRATED · ${d.totalTracked || d.tokens.length}`)}}).catch(()=>setMode('GMGN UNAVAILABLE'))},[])
   useEffect(()=>{let active=true;const load=()=>fetch('/api/feed').then(async r=>{if(!r.ok)throw new Error();return r.json()}).then(d=>{if(!active)return;if(Array.isArray(d.posts)&&d.posts.length)setFeedPosts(d.posts);if(Array.isArray(d.agents)&&d.agents.length)setRoster(d.agents)}).catch(()=>{});void load();const timer=setInterval(load,60_000);return()=>{active=false;clearInterval(timer)}},[])
   useEffect(()=>{
-    const provider=window.ethereum;if(!provider)return
+    const provider=window.ethereum
+    if(!provider||!wallet)return
     let active=true
     const refresh=(..._args:unknown[])=>{void readBscWallet(provider).then(next=>{if(active){setWallet(next);setWalletError('')}}).catch(()=>{if(active)setWallet(null)})}
-    refresh()
     provider.on?.('accountsChanged',refresh);provider.on?.('chainChanged',refresh)
     return()=>{active=false;provider.removeListener?.('accountsChanged',refresh);provider.removeListener?.('chainChanged',refresh)}
-  },[])
+  },[wallet?.address])
   useEffect(()=>{const fn=(e:KeyboardEvent)=>{if(e.key==='Escape'){setModal(false);setMobile(false)}};addEventListener('keydown',fn);return()=>removeEventListener('keydown',fn)},[])
   const props={tokens,mode,onCreate:()=>setModal(true),feedPosts,roster}
   return <div className="app"><Sidebar page={page} onPage={setPage} onCreate={()=>setModal(true)} open={mobile} close={()=>setMobile(false)}/><main><Topbar openMenu={()=>setMobile(true)} dataMode={mode} wallet={wallet} connecting={walletConnecting} walletError={walletError} onConnect={connectWallet}/><div className="content">{page==='Feed'&&<FeedPage {...props}/>} {page==='Agents'&&<AgentsPage onCreate={props.onCreate} roster={roster}/>} {page==='Discover'&&<DiscoverPage tokens={tokens} mode={mode} onCreate={props.onCreate}/>} {page==='Activity'&&<ActivityPage feedPosts={feedPosts}/>} {page==='Rewards'&&<RewardsPage/>} {page==='Updates'&&<UpdatesPage/>}</div></main>{modal&&<CreateModal close={()=>setModal(false)} wallet={wallet} connectWallet={connectWallet}/>}</div>
