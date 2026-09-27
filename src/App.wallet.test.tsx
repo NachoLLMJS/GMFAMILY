@@ -42,9 +42,18 @@ describe('wallet consent boundary', () => {
 
     const container = document.createElement('div')
     document.body.append(container)
-    const root = createRoot(container)
-    roots.push(root)
-    await act(async () => { root.render(<App />) })
+    const firstRoot = createRoot(container)
+    roots.push(firstRoot)
+    await act(async () => { firstRoot.render(<App />) })
+    await act(async () => { await Promise.resolve() })
+
+    expect(calls).toEqual([])
+
+    await act(async () => firstRoot.unmount())
+    roots.pop()
+    const refreshedRoot = createRoot(container)
+    roots.push(refreshedRoot)
+    await act(async () => { refreshedRoot.render(<App />) })
     await act(async () => { await Promise.resolve() })
 
     expect(calls).toEqual([])
